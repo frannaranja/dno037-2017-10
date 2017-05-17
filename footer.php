@@ -1,4 +1,3 @@
-<div class="col-sm-12 col-lg-10 col-lg-offset-1">
 <footer>
 <p>Diseño y Nuevos Medios · Miércoles 17 de mayo, 2017 · <a href="https://github.com/profesorfaco/dno037-2017-10">Ver en repositorio Github</a></p>
 </footer>

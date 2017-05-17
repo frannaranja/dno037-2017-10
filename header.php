@@ -32,7 +32,7 @@ $image = "https://raw.githubusercontent.com/profesorfaco/visualizaciones/master/
 <body>
 <div class="container">
 <div class="row">
-<div class="col-sm-10 col-sm-offset-1">
+<div class="col-sm-12 col-md-10 col-md-offset-1">
 <header>
 <div class="masthead clearfix">
 <div class="inner">
