@@ -1,15 +1,14 @@
 <?php include('header.php');?>
 <section>
-<h2>Blog</h2>
 <?php
-$blog = array_map('str_getcsv', file('url'));
+$blog = array_map('str_getcsv', file('data/blog.csv'));
 array_walk($blog, function(&$a) use ($blog) {$a = array_combine($blog[0], $a);});
 array_shift($blog);
+$nro = $_GET['url'];
 ?>
-<h4>post_title</h4>
-<p>post_excerpt</p>
-<p>post_content</p>
-<p>post_data</p>
-<hr>
+<h2><?php echo($blog[$nro]["post_title"])?></h2>
+<h4><?php echo($blog[$nro]["post_excerpt"])?></h4>
+<img src="<?php echo($blog[$nro]["post_image"])?>" class="img-responsive">
+<p><?php echo($blog[$nro]["post_content"])?></p>
 </section>
 <?php include('footer.php');?>
